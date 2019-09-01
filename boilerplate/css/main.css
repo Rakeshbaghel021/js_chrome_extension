@@ -1,2 +1,32 @@
 /* Importing Normalize css */
 @import url("normalize.css");
+body{
+    background:url("../img/pic.jpeg");
+    background-repeat:no-repeat;
+  
+    background-size: cover;
+    font-family: 'lato',sans-serif;
+  }
+.container{
+	width: 80%;
+    box-sizing: border-box;
+    margin-left: 10rem;
+    border: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+    margin-top: 7rem;
+
+}
+#btn{
+	 border: 0;
+    background:#EC6B55;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 24rem;
+    font-weight: 600;
+}

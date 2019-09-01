@@ -1,22 +1,50 @@
-var quotes=[{
-	         quote:"yayayya",
-	         author:"jkghjhfg"
+let lists=[
+           { "country":"India",
+             "capital":"New Delhi"
            },
-           {
-           	quote:"rrrrrrrr",
-           	author:"jk"
+           { country:"Afghanistan",
+             capital:"Kabul"
            },
-           {
-           	quote:"dhjh",
-           	author:"kjkhj"
+           { country:"Australia",
+             capital:"Canberra"
+           },
+           { country:"Pakistan",
+             capital:"Islamabad"
+           },
+           { country:"United Arab Emirates",
+             capital:"Abu Dhabi"
+           },
+           { country:"United Kingdom",
+             capital:"London"
+           },
+           { country:"Nepal",
+             capital:" Kathmandu"
+           },
+           { country:"Japan",
+             capital:"Tokyo"
+           },
+           { country:"Germany",
+             capital:"Berlin"
+           },
+           { country:"Egypt",
+             capital:"Cairo"
+           },
+           { country:"China",
+             capital:"Beijing"
+           },
+           { country:"Greece",
+             capital:"Athens"
            }
            ]
-function changequotes() {
-	var num=Math.floor(Math.random()*quote.length);
-	var h1=document.getElementById("heading");
-	var h5=document.getElementById("para");
 
-	h1.innerText=quotes[num].quote;
-	h5.innerText=quotes[num].author;
+const btn=document.getElementById("btn");
+const country=document.getElementById("country");
+const capital=document.getElementById("capital");
+
+btn.addEventListener("click",getCapital);
+
+function getCapital() {
+	let num=Math.floor(Math.random()*lists.length);
+	country.innerHTML="Country - " + lists[num].country;
+	capital.innerHTML="Capital - " + lists[num].capital;
 }
-document.getElementById("click").addEventListener("click",changequotes);
